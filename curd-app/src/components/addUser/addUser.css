@@ -1,53 +1,68 @@
-.addUser{
-    background-color: rgb(242, 242, 243);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.addUser {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 
-
-.addUser_formBox{
+.addUser_formBox {
     /* background-color: rgb(255, 255, 255); */
     border-radius: 1rem;
     padding: 2rem;
+    width: 25vw;
 }
-.addUser_formBox-group{
-    display: flex;
-    justify-content: space-between;
-
+.addUser_formBox-group {
+  display: flex;
+  justify-content: space-between;
+}
+.marginR{
+    margin-right: 1rem; 
 }
 
-.addUser_formBox_inputContainers{
-    width: 100%;
-    margin: 1rem 2px;
+.addUser_formBox_inputContainers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 10px;
+  background-color: white;
 }
 
 .addUser_formBox_inputContainers input {
-    width: 100%;
-    outline: none;
-    border: 1px solid rgb(182, 182, 182);
-    padding: 0.4rem ;
-    border-radius: 5px;
-    font-size: 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
-.btn{
-    width: 100%;
-    margin-top: 1.5rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 8px;
-    background-color: rgb(22, 37, 169);
-    cursor: pointer;
-    color: white;
-    transition: 0.3s ease;
+.input-container .icon {
+  padding: 10px;
+  /* color: #0057FC; */
+  padding: 0 10px;
+  background-color: white;
 }
-.btn:hover{
-    border: 1px solid rgb(182, 182, 182);
-    background-color: white;
-    color: rgb(22, 37, 169);
+.btn {
+  width: 100%;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #0057FC;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background-color: #0a49c0;
+  color: white;
 }

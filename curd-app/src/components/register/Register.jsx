@@ -1,8 +1,11 @@
-import React from "react";
-import "./register.css";
-import { useState } from "react";
-import { FaOpencart } from "react-icons/fa";
+import React, { useState } from "react";
+import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { useNavigate, Link } from "react-router-dom";
+import { RxPerson } from "react-icons/rx";
+import { BsTelephone } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi";
+import { SlLock } from "react-icons/sl";
+import "./register.css";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -39,11 +42,12 @@ const Register = () => {
   return (
     <>
       <div className="register">
-        <FaOpencart size={150} color="#fff" />
+        <LiaCartArrowDownSolid size={150} className="main-icon" color="#fff" />
         <div className="register_formBox">
           <form onSubmit={registerUser}>
             <div className="register_formBox-group">
-              <div className="register_formBox_inputContainers">
+              <div className="register_formBox_inputContainers marginR">
+              <RxPerson color="#fff" icon="user" className="icon" />
                 <input
                   type="text"
                   placeholder="FIRST NAME"
@@ -54,6 +58,7 @@ const Register = () => {
                 />
               </div>
               <div className="register_formBox_inputContainers">
+              <RxPerson color="#fff" icon="user" className="icon" />
                 <input
                   type="text"
                   placeholder="LAST NAME"
@@ -66,6 +71,7 @@ const Register = () => {
             </div>
 
             <div className="register_formBox_inputContainers">
+            <TfiEmail color="#fff" icon="envelope" className="icon" />
               <input
                 type="email"
                 placeholder="EMAIL"
@@ -76,6 +82,7 @@ const Register = () => {
               />
             </div>
             <div className="register_formBox_inputContainers">
+            <BsTelephone color="#fff" icon="phone" className="icon" />
               <input
                 type="number"
                 placeholder="PHONE"
@@ -86,6 +93,7 @@ const Register = () => {
               />
             </div>
             <div className="register_formBox_inputContainers">
+            <SlLock color="#ffff" icon="phone" className="icon" />
               <input
                 type="password"
                 placeholder="PASSWORD"
@@ -96,7 +104,7 @@ const Register = () => {
               />
             </div>
 
-            <button className="btn">SIGN UP</button>
+            <button className="btn-signup">SIGN UP</button>
           </form>
           <h4>Already registered? <Link to="/login">Login</Link></h4>
         </div>

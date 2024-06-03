@@ -1,5 +1,6 @@
 .register{
-    background-color: rgb(61, 93, 235);
+    background: url(../../../bg.png) no-repeat center;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -9,43 +10,68 @@
 }
 
 
+
 .register_formBox{
     /* background-color: red; */
+    border-radius: 1rem;
     padding: 2rem;
+    width: 25vw;
 }
 .register_formBox-group{
     display: flex;
     justify-content: space-between;
 
 }
-
-.register_formBox_inputContainers{
-    width: 100%;
-    margin: 1rem 2px;
+.marginR{
+    margin-right: 1rem; 
 }
+.register_formBox_inputContainers{
+    display: flex;
+  align-items: center;
+  margin-top: 1rem ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
 
 .register_formBox_inputContainers input {
     width: 100%;
     outline: none;
-    border: 1px solid white;
+    border: none;
     padding: 0.4rem ;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    background: none;
+    color: white;
 }
 
-.btn{
+.register_formBox_inputContainers input::placeholder {
+    color: white;
+}
+.register_formBox_inputContainers input:-webkit-autofill {
+    background: none !important;
+    -webkit-box-shadow: 0 0 0 1000px rgb(32, 72, 192) inset !important;
+    -webkit-text-fill-color: white !important;
+}
+.input-container .icon {
+    padding: 10px;
+    padding: 0 10px;
+    color: white;
+  }
+
+.btn-signup{
     width: 100%;
     margin-top: 1.5rem;
     border: none;
     outline: none;
     padding: 0.5rem;
-    border-radius: 8px;
-    background-color: rgb(22, 37, 169);
+    border-radius: 5px;
+    background-color: white;
     cursor: pointer;
-    color: white;
+    color: #0057FC;
     transition: 0.3s ease;
 }
-.btn:hover{
-    background-color: white;
-    color: rgb(22, 37, 169);
+.btn-signup:hover{
+    background-color: #e1e4ea;
 }

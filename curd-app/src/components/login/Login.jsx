@@ -1,6 +1,8 @@
 import React from 'react'
 import './login.css'
-import { FaOpencart } from "react-icons/fa";
+import { LiaCartArrowDownSolid } from "react-icons/lia";
+import { TfiEmail } from "react-icons/tfi";
+import { SlLock } from "react-icons/sl";
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
@@ -39,10 +41,11 @@ const Login = () => {
   return (
     <>
         <div className='login'>
-        <FaOpencart size={150} color="#fff"/>
+        <LiaCartArrowDownSolid size={150} color="#fff"/>
             <div className='login_formBox'>
                 <form onSubmit={loginUser}>
                     <div className='login_formBox_inputContainers'>
+                    <TfiEmail color="#fff" icon="envelope" className="icon" />
                         <input 
                         type='email' 
                         placeholder='EMAIL'
@@ -50,6 +53,7 @@ const Login = () => {
                         onChange={(e) => {setEmail(e.target.value)}}/>
                     </div>
                     <div className='login_formBox_inputContainers'>
+                    <SlLock color="#fff" icon="envelope" className="icon" />
                         <input 
                         type='password' 
                         placeholder='PASSWORD'

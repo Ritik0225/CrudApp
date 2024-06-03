@@ -12,7 +12,7 @@ function App() {
   <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' exact Component={Register} />
+      <Route path='/' exact Component={Login} />
       <Route path='/login' exact Component={Login}/>
       <Route path='/register' exact Component={Register}/>
       <Route path='/curdApp' exact Component={CurdTable} />

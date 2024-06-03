@@ -2,6 +2,11 @@ import React from "react";
 import "./addUser.css";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { RxPerson } from "react-icons/rx";
+import { BsTelephone } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi";import Navbar from "../navbar/Navbar";
+;
+// import { MdLock } from "react-icons/md";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -38,12 +43,14 @@ const Register = () => {
   };
   return (
     <>
+    <Navbar/>
       <div className="addUser">
-        <h1>Add User</h1>
+        <h1>ADD USER</h1>
         <div className="addUser_formBox">
           <form onSubmit={createUser}>
             <div className="addUser_formBox-group">
-              <div className="addUser_formBox_inputContainers">
+              <div className="addUser_formBox_inputContainers marginR">
+              <RxPerson color="#0057FC" icon="user" className="icon" />
                 <input
                   type="text"
                   placeholder="FIRST NAME"
@@ -54,6 +61,7 @@ const Register = () => {
                 />
               </div>
               <div className="addUser_formBox_inputContainers">
+              <RxPerson color="#0057FC" icon="user" className="icon" />
                 <input
                   type="text"
                   placeholder="LAST NAME"
@@ -66,6 +74,7 @@ const Register = () => {
             </div>
 
             <div className="addUser_formBox_inputContainers">
+            <TfiEmail color="#0057FC" icon="envelope" className="icon" />
               <input
                 type="email"
                 placeholder="EMAIL"
@@ -76,6 +85,7 @@ const Register = () => {
               />
             </div>
             <div className="addUser_formBox_inputContainers">
+            <BsTelephone color="#0057FC" icon="phone" className="icon" />
               <input
                 type="number"
                 placeholder="PHONE"
